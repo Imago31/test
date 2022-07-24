@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'StratosSkyeng';
+    src: local("StratosSkyeng"), local("StratosSkyeng"), url("../fonts/StratosSkyeng.woff2") format("woff2"), url("../fonts/StratosSkyeng.woff") format("woff"), url("../fonts/StratosSkyeng.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body{
+    font-family: 'StratosSkyeng', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+
+  /* left menu */
+
+  .left_side_menu{
+    width: 244px;
+    height: 100vh;
+    background: #1C1C1C;
+    padding: 36px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1200;
+  }
+
+  .logo{
+    width: 113px;
+    height: 17px;
+  }
+  .burger_button{
+    color: #D3D3D3;
+    font-size: 34px;
+    margin-top: 46px;
+    margin-bottom: 36px;
+    line-height: 12px
+  }
+  .burger_menu{
+    display: flex;
+    flex-direction: column;
+  }
+.burger_menu a{
+    margin-bottom: 26px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* header */
+
+.header{
+    position: fixed;
+    left: 244px;
+    top: 0;
+    padding-left: 50px;
+    z-index: 1000;
+    height: 329px;
+    width: 100%;
+    background: #333131;
+}
+
+
+.search{
+    width: 1293px;
+    height: 51px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #4E4E4E;
+    outline: none;
+    color: #ffffff;
+    margin-top: 20px;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.search::-webkit-input-placeholder { color: #ffffff; }
+.search::-moz-placeholder { color: #ffffff; } /* Firefox 19+ */
+.search:-moz-placeholder { color: #ffffff; } /* Firefox 18- */
+.search:-ms-input-placeholder { color: #ffffff }
+
+.header_title{
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.8px;
+    color: #FFFFFF;
+    margin-top: 51px;
+}
+
+.search_by_block{
+  display: flex;
+  align-items: center;
+  margin-top: 51px;
+}
+
+.search_by{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.search_by_button{
+  height: 39px;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+  background: none;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  transition: all 0,2s;
+}
+
+.search_by_songer{
+  margin-left: 15px;
+}
+
+.search_by_date{
+  margin-left: 10px;
+}
+
+.search_by_genre{
+  margin-left: 10px;
+}
+
+.search_by_button:hover{
+  border: 1px solid #D9B6FF;
+  cursor: pointer;
+}
+
+ /* tracks */
+.tracks{
+    background: #494545;
+    height: 2800px;
+    margin-top: 329px;
+    margin-left: 244px;
+    padding-left: 50px;
+}
